@@ -18,6 +18,24 @@ This repository contains an innovative solution for validating motorway sign ass
 
 ## Solution Architecture
 
+### Pipeline
+
+```mermaid
+graph TD
+  A[Sign Location] --> B{Tile Fetching}
+  B --> C[Data Annotation]
+  B --> D[CNN Detection]
+  C --> E[Update Sign]
+  C/D --> F[20m Radius Check]
+  F --> G[Topology Updates]
+```
+
+<p align="center">
+  <img src="data_annotation.jpg" alt="data_annotation" width="300" height="300"/>
+  <img src="Corrected topology.png" alt="Corrected topology" width="300" height="300"/>
+  <img src="detection.jpg" alt="motorsign_detection" width="300" height="300"/>
+</p>
+
 
 ## Requirements
 
@@ -33,11 +51,6 @@ requests==2.32.3
 matplotlib==3.8.4
 shapely==2.0.4
 ```
-<p align="center">
-  <img src="data_annotation.jpg" alt="data_annotation" width="300"/>
-  <img src="Corrected topology.png" alt="Corrected topology" width="300"/>
-  <img src="detection.jpg" alt="motorsign_detection" width="300"/>
-</p>
 
 
 
