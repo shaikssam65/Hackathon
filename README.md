@@ -1,9 +1,5 @@
-# Motorway Sign Geospatial Validation Toolkit 🚗📡
-
 **A machine learning-powered solution for validating motorway sign associations against geospatial topology rules**
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Project Overview
 
@@ -29,14 +25,5 @@ This repository contains an innovative solution for validating motorway sign ass
 ![Corrected_topology](detection.jpg)
 
 
-```mermaid
-graph TD
-    A[Satellite Imagery] --> B(CNN Sign Detection)
-    C[Signs.geojson] --> D{Spatial Analysis}
-    B --> D
-    D -->|No Sign| E[Scenario 1: Remove Ghost Sign]
-    D -->|Wrong Road| F[Scenario 2: Update Topology ID]
-    D -->|Correct Road| G[Scenario 3: Fix Attributes]
-```
 
 
