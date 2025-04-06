@@ -13,16 +13,32 @@ This repository contains an innovative solution for validating motorway sign ass
 
 - 🛰️ **Satellite Image Analysis** - Automated sign verification using CNN models
 - 📍 **Precision Geospatial Matching** - Spatial joins with 20cm accuracy
-- 🤖 **Hybrid AI Workflow** - Combines EfficientNet & YOLO detection models
 - 🗄️ **Data Versioning** - Automatic tracking of topology corrections
 - 📊 **Validation Dashboard** - Interactive Folium visualization of results
 
 ## Solution Architecture
 
 
-![Corrected_topology](data_annotation.jpg)
-![Corrected_topology](Corrected topology.png)
-![Corrected_topology](detection.jpg)
+## Requirements
+
+```text
+geopandas==0.14.2
+tensorflow==2.16.1
+torch==2.3.0
+torchvision==0.18.0
+scikit-learn==1.4.2
+pyproj==3.6.1
+folium==0.15.1
+requests==2.32.3
+matplotlib==3.8.4
+shapely==2.0.4
+```
+<p align="center">
+  <img src="data_annotation.jpg" alt="data_annotation" width="300"/>
+  <img src="Corrected topology.png" alt="Corrected topology" width="300"/>
+  <img src="detection.jpg" alt="motorsign_detection" width="300"/>
+</p>
+
 
 
 
